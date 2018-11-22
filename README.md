@@ -10,4 +10,4 @@ Build a CNN for origami base imaging:
     initially we will solve sharp changes, i.e. no wet folding
   Binary solution for one base.
   Do a cieling analysis for further optimization of the algorithm.
-  Extended for multi-class or other bases.
+  Extended for multi-class or other bases. 
