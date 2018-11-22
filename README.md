@@ -1,2 +1,2 @@
 # OrigamiSolver
-To usemachine learning techniques to help solve for origami bases
+To use machine learning techniques to help solve for origami bases
