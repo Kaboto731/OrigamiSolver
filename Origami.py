@@ -27,6 +27,17 @@ from keras.callbacks import ReduceLROnPlateau
 #input Height and Width of desired testing image
 H = 28
 W = 28
+#need to put in images here
+train = pd.read_csv("../Origamiimg/BirdBase/birdbaseimgs.csv")
+#validation
+Vali1_1 = pd.read_csv("../Origamiimg/Crane/Crane.csv")
+Vali2_1 = pd.read_csv("../Origamiimg/Crane2/Crane2.csv")
+                    
+#base comparison with things not built in the system
+test1_0 = pd.read_csv("../Origamiimg/WaterbombBase/waterbombbase.csv")
 
+
+#K-fold cross validation might be needed to show which bases hold better approx.
+#be prepared to have long computation times with this ^
 
 sns.set(style='white',context='notebook',palette='deep')
