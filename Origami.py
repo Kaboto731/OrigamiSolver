@@ -37,7 +37,20 @@ Vali2_1 = pd.read_csv("../Origamiimg/Crane2/Crane2.csv")
 test1_0 = pd.read_csv("../Origamiimg/WaterbombBase/waterbombbase.csv")
 
 
-#K-fold cross validation might be needed to show which bases hold better approx.
-#be prepared to have long computation times with this ^
+
 
 sns.set(style='white',context='notebook',palette='deep')
+#DATA PRE-PROCESSING
+
+#Grayscale images, we are searching for creases, sharp lighting differences.
+
+#Background removal?
+
+#DATA PROCESSING
+#CNN here
+
+
+
+#ANN here
+
+
