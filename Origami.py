@@ -23,25 +23,29 @@ from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten, Conv2D, MaxPool2D
 from keras.optimizers import RMSprop
 from keras.preprocessing.image import ImageDataGenerator
-from keras.callbacks import ReduceLROnPlateau
+from keras.callbacks imporr, except a few, believed that was the best I can do and some kids made up rumors about me that most of the students believed to be true. I remember, at my lowest point, telling myself "one day" because I knew someday that I will get to show people that I am stronger than how I was portrayed. My senior year I was fully let into the classroom and I received a 4.0 GPA. I then went on to a community college and retained that 4.0 for four semesters. I then got the opportunity to be at the school of my dreams and I am so thankful for the class I am with. Even though I made it this far, it's still an uphill battle in which my grades are not reflecting me and I push myself to learn and excel in the classrom. I just want to show that if I make this far, then anyone else who is on the spectrum can too.  Never give up on yourself.
+
+t ReduceLROnPlateau
 #input Height and Width of desired testing image
 H = 28
 W = 28
+#recheck the pathing here
 #need to put in images here
-train = pd.read_csv("../Origamiimg/BirdBase/birdbaseimgs.csv")
-#validation
-Vali1_1 = pd.read_csv("../Origamiimg/Crane/Crane.csv")
-Vali2_1 = pd.read_csv("../Origamiimg/Crane2/Crane2.csv")
-                    
-#base comparison with things not built in the system
-test1_0 = pd.read_csv("../Origamiimg/WaterbombBase/waterbombbase.csv")
-
-
+#DATA PRE-PROCESSING
+#taking data with 
+trainbird = pd.read_csv("../Origamiimg/BirdBase/birdbaseimgs.csv")
+trainwaterbomb = pd.read_csv("../Origamiimg/WaterbombBase/waterbombbase.csv")
+#Test cases after validating that we can recognize folds in more complex structures
+Testbird = pd.read_csv("../Origamiimg/BirdBaseUses")
+Testwaterbomb = pd.read_csv("../Origamiimg/WaterbombbaseUses")
 
 
 sns.set(style='white',context='notebook',palette='deep')
-#DATA PRE-PROCESSING
-
+#check that our information is indeed correct
+trainbird.head()
+trainwaterbomb.head()
+Testbird.head()
+Testwaterbomb.head()
 #Grayscale images, we are searching for creases, sharp lighting differences.
 
 #Background removal?
