@@ -15,3 +15,9 @@ Build a CNN for origami base imaging:
   Binary solution for one base.
   Do a cieling analysis for further optimization of the algorithm.
   Extended for multi-class or other bases. 
+  
+  
+  Helpful links:
+  
+  https://medium.com/coinmonks/part-1-2-step-by-step-guide-to-data-preparation-for-transfer-learning-using-tensorflows-object-ac45a6035b7a
+  
