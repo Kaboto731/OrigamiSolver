@@ -33,19 +33,12 @@ W = 28
 #need to put in images here
 #DATA PRE-PROCESSING
 #taking data with 
-trainbird = pd.read_csv("../Origamiimg/BirdBase/birdbaseimgs.csv")
-trainwaterbomb = pd.read_csv("../Origamiimg/WaterbombBase/waterbombbase.csv")
-#Test cases after validating that we can recognize folds in more complex structures
-Testbird = pd.read_csv("../Origamiimg/BirdBaseUses")
-Testwaterbomb = pd.read_csv("../Origamiimg/WaterbombbaseUses")
-
+bird = pd.read_csv("../OrigamiBirdBase/birdbase_labels.csv")
 
 sns.set(style='white',context='notebook',palette='deep')
 #check that our information is indeed correct
-trainbird.head()
-trainwaterbomb.head()
-Testbird.head()
-Testwaterbomb.head()
+bird.head()
+
 #Grayscale images, we are searching for creases, sharp lighting differences.
 
 #Background removal?
