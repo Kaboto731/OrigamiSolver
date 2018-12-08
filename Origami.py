@@ -31,7 +31,8 @@ W = 28
 #need to put in images here
 #DATA PRE-PROCESSING
 #taking data with 
-bird = pd.read_csv("../OrigamiBirdBase/birdbase_labels.csv")
+birdbase = pd.read_csv("Annotations/birdbase_labels.csv")
+Origamicrane = pd.read_csv("Annotations/origamicrane_labels.csv")
 
 sns.set(style='white',context='notebook',palette='deep')
 #check that our information is indeed correct
