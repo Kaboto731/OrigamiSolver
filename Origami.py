@@ -10,7 +10,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import seaborn as sns
-
+import imageio
+import skimage
+import skimage.io
+import skimage.transform
+import numpy as np
+import scipy
 
 np.random.seed(2)
 
@@ -65,7 +70,7 @@ generator.fit(base_train)
 
 #Splitting our original base_train to have a validation step
 base_train, base_val = train_test_split(base_train, test_size = 0.1, random_state=24)
-#Grayscale images, we are searching for creases, sharp lighting differences.
+#Grayscale images, we are searching for creases, sharp lighting differences?
 
 #Background removal?
 
@@ -83,6 +88,7 @@ model.add(Dense(train_labels.columns.size, activation = 'softmax'))
 model.compile(optimizer = 'rmsprop', loss = 'categorical_crossentropy', metrics = ['accuracy'])
 #A stopping condition for if we are not actually improving our results within 10 epochs
 earlystopper =EarlyStopping(monitor = 'val_loss', patience = 10, verbose =1)
+greatmod= ModelCheckpoint('best_model.h5', mointor='val_loss', verbose=1, save_best_only=True, save_weights_only=True)
 
 
 
